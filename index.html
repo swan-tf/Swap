@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwanPan</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #f4f7ff, #e8f0ff);
+        color: #23395d;
+      }
 
+      header {
+        background: #2f5bd7;
+        color: white;
+        padding: 20px 30px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      main {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 30px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+
+      .links {
+        margin-top: 20px;
+      }
+
+      .links a {
+        display: inline-block;
+        margin: 8px 0;
+        text-decoration: none;
+        color: #2f5bd7;
+        font-weight: bold;
+      }
+
+      .links a:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 8px;
+        background: #2f5bd7;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #2248a8;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        color: #5b6b84;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>SwanPan</h1>
+    </header>
+
+    <main>
+      <p>Welcome to SwanPan. Explore the links below:</p>
+
+      <div class="links">
+        <a href="https://www.google.com" target="_blank">Google Link</a><br />
+        <a href="https://www.youtube.com" target="_blank">YouTube Link</a><br />
+        <a href="https://srbee.github.io/repo/" target="_blank">Sudhir GitHub</a><br />
+        <a href="https://in.linkedin.com/in/sudhir-bhide-393386196" target="_blank">Sudhir LinkedIn</a><br />
+
+      <button onclick="alert('Hello world')">Click Me</button>
+    </main>
+
+    <footer>
+      <span id="date"></span>
+    </footer>
+
+    <script>
+      document.getElementById('date').textContent = 'Current date: ' + new Date().toLocaleDateString();
+    </script>
+  </body>
+</html>
